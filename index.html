@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RDB — RBLX Data Briefs</title>
+<style>
+  :root {
+    --bg: #000000;
+    --panel: #0c0d0f;
+    --accent: #00b0f4;
+    --accent-dim: #0077a3;
+    --text-primary: #eef2f5;
+    --text-secondary: #8d97a1;
+    --border: #1c2d36;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  html, body {
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    background: var(--bg);
+    color: var(--text-primary);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Inter, Roboto, Helvetica, Arial, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 32px 16px;
+    line-height: 1.55;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 560px;
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 44px 40px 40px;
+    box-shadow: 0 0 60px rgba(0, 176, 244, 0.06);
+  }
+
+  .header {
+    text-align: center;
+  }
+
+  .logo {
+    max-width: 110px;
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto 22px;
+    filter: drop-shadow(0 0 18px rgba(0, 176, 244, 0.55)) drop-shadow(0 0 40px rgba(0, 176, 244, 0.25));
+  }
+
+  h1 {
+    margin: 0;
+    font-size: 2.4rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    color: var(--text-primary);
+  }
+
+  .subtitle {
+    margin: 6px 0 0;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: var(--accent);
+  }
+
+  .lead {
+    margin: 14px 0 0;
+    font-size: 0.82rem;
+    color: var(--text-secondary);
+  }
+
+  .lead span {
+    color: var(--text-primary);
+    font-weight: 500;
+  }
+
+  .divider {
+    height: 1px;
+    margin: 32px 0;
+    background: linear-gradient(90deg, transparent, var(--accent-dim) 50%, transparent);
+  }
+
+  .section-label {
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    color: var(--accent);
+    margin: 0 0 10px;
+  }
+
+  .section p {
+    margin: 0;
+    font-size: 0.95rem;
+    color: var(--text-primary);
+  }
+
+  .connect-box {
+    margin-top: 24px;
+    padding-top: 24px;
+    border-top: 1px solid var(--border);
+  }
+
+  .btn-row {
+    display: flex;
+    justify-content: center;
+    margin-top: 22px;
+  }
+
+  .btn {
+    display: inline-block;
+    padding: 13px 32px;
+    background: var(--accent);
+    color: #00151d;
+    font-weight: 700;
+    font-size: 0.95rem;
+    text-decoration: none;
+    border-radius: 8px;
+    letter-spacing: 0.3px;
+    transition: box-shadow 0.2s ease, transform 0.2s ease;
+  }
+
+  .btn:hover {
+    box-shadow: 0 0 24px rgba(0, 176, 244, 0.5);
+    transform: translateY(-1px);
+  }
+
+  .btn:focus-visible {
+    outline: 2px solid var(--text-primary);
+    outline-offset: 3px;
+  }
+
+  .email-text {
+    text-align: center;
+    margin: 14px 0 0;
+    font-size: 0.82rem;
+    color: var(--text-secondary);
+    letter-spacing: 0.3px;
+  }
+
+  @media (max-width: 480px) {
+    .card {
+      padding: 32px 24px 28px;
+    }
+    h1 {
+      font-size: 2rem;
+    }
+    .subtitle {
+      letter-spacing: 2px;
+    }
+  }
+</style>
+</head>
+<body>
+
+  <div class="card">
+    <div class="header">
+      <img class="logo" src="logo.png" alt="RDB logo">
+      <h1>RDB</h1>
+      <p class="subtitle">RBLX Data Briefs</p>
+      <p class="lead">Project Lead: <span>Sol_Ace (@Autherthebest149)</span></p>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="section">
+      <p>RBLX Data Briefs (RDB) is a volunteer, non-profit intelligence project tracking platform updates, corporate economic history, and community sentiment. We interview the community to bring you honest news and a breakdown of what is actually going on behind the scenes on the platform.</p>
+    </div>
+
+    <div class="section connect-box">
+      <p>Want the latest community insights, platform history research, and real player opinions delivered straight to your inbox? Connect with our desk. We provide open-source updates completely for free to help raise community awareness and keep everyone informed.</p>
+      <div class="btn-row">
+        <a class="btn" href="mailto:rblxdatabriefs@proton.me">Email the Desk</a>
+      </div>
+      <p class="email-text">rblxdatabriefs@proton.me</p>
+    </div>
+  </div>
+
+</body>
+</html>
